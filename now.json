@@ -1,0 +1,17 @@
+{
+  "name": "jacksonhardaker.co",
+  "alias": "www.jacksonhardaker.co",
+  "scope": "jacksonhardaker",
+  "routes": [
+    {
+      "src": "/",
+      "status": 301,
+      "headers": { "Location": "http://www.jacksonhardaker.com" }
+    },
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": { "Location": "http://www.jacksonhardaker.com/$1" }
+    }
+  ]
+}
